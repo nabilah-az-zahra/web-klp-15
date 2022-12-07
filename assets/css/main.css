@@ -1,0 +1,291 @@
+* {
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	gap: 1em;
+	background-color: #103060;
+}
+
+.navbar a {
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+.navbar a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.loginbtn {
+	margin-left: auto;
+}
+
+/* Footer */
+.footer {
+	background-color: whitesmoke;
+	padding: 1em;
+	text-align: center;
+	border-top: 1px solid lightgray;
+}
+
+/* HOME */
+
+.hometitle {
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+/* Article*/
+.article {
+	max-width: 740px;
+	margin: 4em auto;
+	padding: 0 2em;
+}
+  
+.article .post-title {
+	font-weight: bolder;
+}
+  
+.article .post-meta {
+	margin: 1em 0;
+	font-size: 0.8rem;
+	color: grey;
+}
+
+.article .post-body {
+	line-height: 1.6rem;
+}
+
+/* LIST ARTICLE */
+
+.listarticletitle {
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+.listarticleshow {
+	margin-left: 40px;
+}
+
+.listarticleshow ul li {
+	list-style: none;
+}
+
+.listarticleshow a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #103060;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 500px;
+	min-height: 30px;
+	margin-bottom: 20px;
+}
+
+.listarticleshow a:hover {
+	opacity: 0.8;
+}
+
+/* EMPTY ARTICLE */
+.noarticletitle {
+	margin-top: 60px;
+	margin-left: 20px;
+	font-weight: 700;
+}
+
+/* ABOUT TITLE */
+
+.abouttitle {
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+/* CONTACT */
+
+.contacttitle {
+	margin-top: 60px;
+	margin-left: 20px;
+	font-weight: 700;
+}
+
+.contactdesc {
+	margin: 10px 20px;
+	font-weight: 500;
+}
+
+.contactoption {
+	display: flex; 
+	margin-bottom: 20px;
+	gap: 1rem;
+}
+
+.contactkirimbtn {
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	background-color: #103060;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.contactkirimbtn:hover {
+	opacity: 0.8;
+}
+
+.contactresetbtn {
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	background-color: #e7e7e7;
+	color: #103060;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.contactresetbtn:hover {
+	opacity: 0.6;
+}
+
+.contactsec span {
+	color: #f44336;
+}
+
+/* LOGIN */
+
+.loginformtitle {
+	margin-top: 60px;
+	margin-left: 20px;
+	font-weight: 700;
+}
+
+.loginformdesc {
+	margin: 10px 20px;
+	font-weight: 500;
+}
+
+.loginformsec span {
+	color: #f44336;
+}
+
+.loginformbtn {
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	background-color: #103060;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.loginformbtn:hover {
+	opacity: 0.8;
+}
+
+/* Form */
+form {
+	box-sizing: border-box;
+	display:flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-left: 2em;
+}
+label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+input, textarea {
+	display: inline-block;
+	padding: 0.5rem;
+	width: 100%;
+}
+input:focus, textarea:focus {
+	outline-color: dodgerblue;
+}
+
+.invalid {
+	border: 2px solid rgb(153, 16, 16);
+}
+
+.invalid::placeholder {
+	color: rgb(153, 16, 16);
+}
+
+.invalid-feedback:empty {
+	display: none;
+}
+.invalid-feedback {
+	font-size: smaller;
+	color: rgb(153, 16, 16);
+}
+
+/* Button */
+.button {
+	background-color: #e7e7e7;
+	border: 2px solid transparent;
+	border-radius: 8px;
+	color: black;
+	padding: 8px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+.button:active {
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.button-success {
+	background-color: #4caf50;
+	color: white;
+}
+.button-primary {
+	background-color: #103060;
+	color: white;
+}
+.button-danger {
+	background-color: #f44336;
+	color: white;
+}
+
+.button-small {
+	font-size: 0.7rem;
+}
